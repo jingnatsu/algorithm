@@ -1,7 +1,7 @@
 function findLCS(X, Y) {
     const m = X.length;
     const n = Y.length;
-    const L = new Array(m).fill(0).map(() => new Array(n).fill());
+    const L = new Array(m+1).fill(0).map(() => new Array(n+1).fill(0));
     
     for(let i = 1; i <= m; i++) {
         for(let j = 1; j <= n; j++) {
