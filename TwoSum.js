@@ -8,7 +8,7 @@ function twoSum(nums, target) {
             return [numToIndex[complement], i];
         }
 
-        numToIndex[complement] = i;
+        numToIndex[num] = i;
 
     }
     return [];
