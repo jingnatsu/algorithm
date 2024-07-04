@@ -11,6 +11,7 @@ function ListNode(val, next) {
 * @return {ListNode}
 */
 var mergeTwoLists = function(list1, list2) {
+    // maintain an unchanging reference to node ahead of the return node.
     const dummy = new ListNode();
     let current = dummy;
 
